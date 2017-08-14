@@ -15,7 +15,6 @@ public class readTextFile {
 
     }
 
-
     public String readText(String FILENAME){
 
 		String finalOutput="";
@@ -24,16 +23,13 @@ public class readTextFile {
         FileReader fr = null;
 
         try {
-
-
             fr = new FileReader(FILENAME);
             br = new BufferedReader(fr);
 
             String sCurrentLine;
 
-
             while ((sCurrentLine = br.readLine()) != null) {
-            
+
 			   finalOutput=finalOutput+sCurrentLine;
             }
 
@@ -61,7 +57,5 @@ public class readTextFile {
 
 		System.out.println(finalOutput);
 		return finalOutput;
-
-
     }
 }
