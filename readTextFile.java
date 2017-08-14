@@ -17,7 +17,7 @@ public class readTextFile {
 
 
     public String readText(String FILENAME){
-		
+
 		String finalOutput="";
 
         BufferedReader br = null;
@@ -25,15 +25,15 @@ public class readTextFile {
 
         try {
 
-            //br = new BufferedReader(new FileReader(FILENAME));
+
             fr = new FileReader(FILENAME);
             br = new BufferedReader(fr);
 
             String sCurrentLine;
-			
-			
+
+
             while ((sCurrentLine = br.readLine()) != null) {
-               // System.out.println(sCurrentLine);
+            
 			   finalOutput=finalOutput+sCurrentLine;
             }
 
@@ -58,10 +58,10 @@ public class readTextFile {
             }
 
         }
-		
+
 		System.out.println(finalOutput);
 		return finalOutput;
-		
-		
+
+
     }
 }
